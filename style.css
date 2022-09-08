@@ -1,0 +1,38 @@
+#title{
+text-align: center;
+color: #290981;
+width: 100%;
+}
+
+.color{
+    border: black solid 1px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 2%;  
+}
+
+#cor1{
+    background-color: black;
+    margin-left: 34%;
+}
+
+#cor2{
+    background-color: #EF476F;
+}
+
+#cor3{
+    background-color: #FFD166;
+}
+
+#cor4{
+    background-color: #09814A;
+    
+}
+
+#button-random-color{
+
+width: 10%;
+height: 30px;
+margin-left: 45%;
+}
