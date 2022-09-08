@@ -5,17 +5,22 @@ width: 100%;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+#color-palette{
+   margin-left: 34%;
+   margin-right: 5%;
+}
+
 .color{
     border: black solid 1px;
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin-left: 2%;  
+    width: 70px;
+    height: 70px;
+    margin-left: 4%;  
 }
 
 #cor1{
     background-color: black;
-    margin-left: 34%;
+    
 }
 
 #cor2{
@@ -28,7 +33,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 #cor4{
     background-color: #09814A;
-    margin-right: 34%;
+    
 }
 
 #button-random-color{
@@ -40,4 +45,23 @@ background-color: #85357e;
 color: white;
 font-size: 18px;
 font-family: Arial, Helvetica, sans-serif;
+}
+
+#pixel-board{
+
+    /* border: black solid 1px;  */
+    margin-top: 3%;
+    
+}
+
+.linha{
+    margin-left: 42.5%;
+}
+.pixel{
+    border: black solid 1px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-left: 4px;
 }
