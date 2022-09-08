@@ -28,12 +28,12 @@ font-family: Arial, Helvetica, sans-serif;
 
 #cor4{
     background-color: #09814A;
-    
+    margin-right: 34%;
 }
 
 #button-random-color{
 
-width: 10%;
+width: auto;
 height: 30px;
 margin-left: 45%;
 background-color: #85357e;
