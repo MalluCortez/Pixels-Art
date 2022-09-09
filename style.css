@@ -52,10 +52,14 @@ font-family: Arial, Helvetica, sans-serif;
     /* border: black solid 1px;  */
     margin-top: 3%;
     
+    
 }
 
 .linha{
-    margin-left: 42.5%;
+   margin-left: 42.5%;
+   display: flexbox ;
+   justify-content: center;
+   align-items: center;
 }
 .pixel{
     border: black solid 1px;
@@ -64,4 +68,5 @@ font-family: Arial, Helvetica, sans-serif;
     height: 40px;
     background-color: white;
     margin-left: 4px;
+    
 }
