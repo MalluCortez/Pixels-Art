@@ -3,6 +3,7 @@ const buttonColor = document.querySelector("#button-random-color");
 let colors = document.querySelectorAll(".variable")
 
 
+
 function createPalette() {
     const colorsPalette = [];
 
@@ -51,6 +52,8 @@ function createDiv() {
     }
 
 }
+
+
 createDiv()
 
 
@@ -66,3 +69,21 @@ function saveColors() {
 
 saveColors() */
 
+let squarecolors = document.querySelectorAll(".color")
+
+function putSelected(evt){
+    evt.target.classList.toggle ("selected") 
+
+    /* let squareColorsSelected = document.querySelectorAll(".selected") 
+
+    for (index = 0; index <= squareColorsSelected.length; index ++){
+        squareColorsSelected[index].classList.toggle("selected")
+    }  */
+        
+
+}
+
+
+for (add = 0; add <= squarecolors.length; add ++){
+squarecolors[add].addEventListener("click", putSelected )
+}
