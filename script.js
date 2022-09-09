@@ -54,7 +54,7 @@ function createDiv() {
 createDiv()
 
 
-//verificar na monitoria o erro.
+/* //verificar na monitoria o erro.
 function saveColors() {
     let colorsPalette = localStorage.getItem("colorsPalette");
 
@@ -64,5 +64,5 @@ function saveColors() {
     }
 }
 
-saveColors()
+saveColors() */
 
