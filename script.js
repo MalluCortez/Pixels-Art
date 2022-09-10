@@ -102,3 +102,22 @@ for (add = 0; add < squarecolors.length; add++){
 
 }
 
+// requisito 10
+
+const pixels = document.querySelectorAll(".pixel");
+function selectedColor (event) {
+
+    const selectedSquare = document.querySelector('.selected')
+
+    if (selectedSquare.style.backgroundColor){
+    event.target.style.backgroundColor = selectedSquare.style.backgroundColor
+    } else {
+    event.target.style.backgroundColor = "black"
+    }
+  
+}
+
+for (let counter = 0; counter < pixels.length; counter ++){
+pixels[counter].addEventListener("click", selectedColor)
+}
+
