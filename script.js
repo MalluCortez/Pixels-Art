@@ -121,3 +121,10 @@ for (let counter = 0; counter < pixels.length; counter ++){
 pixels[counter].addEventListener("click", selectedColor)
 }
 
+// requisito 11
+const buttonClear = document.querySelector("#clear-board");
+
+buttonClear.addEventListener("click", function ( ){
+    for (let counter = 0; counter < pixels.length; counter ++)
+    pixels[counter].style.backgroundColor = "white"
+})
