@@ -2,11 +2,11 @@
 const buttonColor = document.querySelector("#button-random-color");
 let colors = document.querySelectorAll(".variable")
 
+const colorsPalette = [];
 
 
 function createPalette() {
-    const colorsPalette = [];
-
+    
     for (let index = 0; index < colors.length; index++) {
 
         let r = Math.floor(Math.random() * 255);
@@ -53,37 +53,44 @@ function createDiv() {
 
 }
 
-
 createDiv()
 
+// requisito 5
 
-/* //verificar na monitoria o erro.
 function saveColors() {
     let colorsPalette = localStorage.getItem("colorsPalette");
+    colorsPalette = JSON.parse(colorsPalette)
 
     for (i = 0; i < colorsPalette.length; i++) {
         const coresPadrao = colors[i]
-        coresPadrao.style.backgroundColor = JSON.parse(colorsPalette)[i];
+        coresPadrao.style.backgroundColor = colorsPalette[i];
     }
-}
+} 
 
-saveColors() */
+/* function saveColors() {
 
+    let colorsPalette = localStorage.getItem("colorsPalette");
+
+    colors[0].style.backgroundColor = JSON.parse(colorsPalette)[0];
+    colors[1].style.backgroundColor = JSON.parse(colorsPalette)[1];
+    colors[2].style.backgroundColor = JSON.parse(colorsPalette)[2];
+
+} */
+
+saveColors() 
+
+//requisito9
 let squarecolors = document.querySelectorAll(".color")
 
 function putSelected(evt){
-    evt.target.classList.toggle ("selected") 
 
-    /* let squareColorsSelected = document.querySelectorAll(".selected") 
+    document.querySelector(".selected").classList.remove("selected") 
 
-    for (index = 0; index <= squareColorsSelected.length; index ++){
-        squareColorsSelected[index].classList.toggle("selected")
-    }  */
-        
+    evt.target.classList.add("selected")
+}
+
+for (add = 0; add < squarecolors.length; add++){
+    squarecolors[add].addEventListener("click", putSelected);
 
 }
 
-
-for (add = 0; add <= squarecolors.length; add ++){
-squarecolors[add].addEventListener("click", putSelected )
-}
