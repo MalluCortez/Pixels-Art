@@ -56,7 +56,7 @@ function createDiv() {
 createDiv()
 
 // requisito 5
-
+/* 
 function saveColors() {
     let colorsPalette = localStorage.getItem("colorsPalette");
     colorsPalette = JSON.parse(colorsPalette)
@@ -65,9 +65,9 @@ function saveColors() {
         const coresPadrao = colors[i]
         coresPadrao.style.backgroundColor = colorsPalette[i];
     }
-} 
+}  */
 
-/* function saveColors() {
+function saveColors() {
 
     let colorsPalette = localStorage.getItem("colorsPalette");
 
@@ -75,7 +75,7 @@ function saveColors() {
     colors[1].style.backgroundColor = JSON.parse(colorsPalette)[1];
     colors[2].style.backgroundColor = JSON.parse(colorsPalette)[2];
 
-} */
+} 
 
 saveColors() 
 
