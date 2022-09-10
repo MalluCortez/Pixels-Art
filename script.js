@@ -20,7 +20,7 @@ function createPalette() {
         colorsPalette.push(boxColor)
     }
    
-    localStorage.setItem('colorsPalette', JSON.stringify(colorsPalette));
+    localStorage.setItem('colorPalette', JSON.stringify(colorsPalette));
    
 }
 
@@ -71,13 +71,12 @@ createDiv()
 
     }
 
-} */  console.log(colorsPalette[colorsPalette.length-1])
-
+} */  
 function saveColors() {
 
-    if (localStorage.colorsPalette !== undefined){
+    if (localStorage.colorPalette !== undefined){
     
-    let colorsPalette = localStorage.getItem("colorsPalette");
+    let colorsPalette = localStorage.getItem("colorPalette");
     colorsPalette = JSON.parse(colorsPalette);
 
     colors[0].style.backgroundColor = colorsPalette[colorsPalette.length-3];
