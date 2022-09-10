@@ -19,9 +19,9 @@ function createPalette() {
 
         colorsPalette.push(boxColor)
     }
-
+   
     localStorage.setItem('colorsPalette', JSON.stringify(colorsPalette));
-
+   
 }
 
 buttonColor.addEventListener("click", createPalette)
@@ -55,26 +55,34 @@ function createDiv() {
 
 createDiv()
 
+
 // requisito 5
-function saveColors() {
-    let colorsPalette = localStorage.getItem("colorsPalette");
-    colorsPalette = JSON.parse(colorsPalette)
-
-    for (i = 0; i < colorsPalette.length; i++) {
-        const coresPadrao = colors[i]
-        coresPadrao.style.backgroundColor = colorsPalette[i];
-    }
-}  
-
 /* function saveColors() {
-
     let colorsPalette = localStorage.getItem("colorsPalette");
+    
 
-    colors[0].style.backgroundColor = JSON.parse(colorsPalette)[0];
-    colors[1].style.backgroundColor = JSON.parse(colorsPalette)[1];
-    colors[2].style.backgroundColor = JSON.parse(colorsPalette)[2];
+    if(colorsPalette !== null ){
+        colorsPalette = JSON.parse(colorsPalette);
 
-}  */
+        for (i = 0; i < colorsPalette.length; i++) {
+            const coresPadrao = colors[i]
+            coresPadrao.style.backgroundColor = colorsPalette[i];
+        } 
+
+    }
+
+} */  console.log(colorsPalette[colorsPalette.length-1])
+
+function saveColors() {
+    
+    let colorsPalette = localStorage.getItem("colorsPalette");
+    colorsPalette = JSON.parse(colorsPalette);
+
+    colors[0].style.backgroundColor = colorsPalette[colorsPalette.length-3];
+    colors[1].style.backgroundColor = colorsPalette[colorsPalette.length-2];
+    colors[2].style.backgroundColor = colorsPalette[colorsPalette.length-1];
+
+} 
 
 saveColors() 
 
