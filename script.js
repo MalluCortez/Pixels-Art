@@ -74,6 +74,8 @@ createDiv()
 } */  console.log(colorsPalette[colorsPalette.length-1])
 
 function saveColors() {
+
+    if (localStorage.colorsPalette !== undefined){
     
     let colorsPalette = localStorage.getItem("colorsPalette");
     colorsPalette = JSON.parse(colorsPalette);
@@ -81,7 +83,7 @@ function saveColors() {
     colors[0].style.backgroundColor = colorsPalette[colorsPalette.length-3];
     colors[1].style.backgroundColor = colorsPalette[colorsPalette.length-2];
     colors[2].style.backgroundColor = colorsPalette[colorsPalette.length-1];
-
+}
 } 
 
 saveColors() 
