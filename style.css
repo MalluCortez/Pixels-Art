@@ -1,12 +1,13 @@
 #title{
-text-align: center;
-color: #85357e;
+/* text-align: center; */
+color: #677d83;
 width: 100%;
 font-family: Arial, Helvetica, sans-serif;
+margin-left: 25%;  
 }
 
 #color-palette{
-   margin-left: 34%;
+   margin-left: 20%;
    margin-right: 5%;
 }
 
@@ -15,7 +16,7 @@ font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     width: 70px;
     height: 70px;
-    margin-left: 4%;  
+    margin-left: 0%;  
 }
 
 #cor1{
@@ -40,8 +41,8 @@ font-family: Arial, Helvetica, sans-serif;
 
     width: auto;
     height: 30px;
-    margin-left: 45%;
-    background-color: #85357e;
+    margin-left: 32%;
+    background-color: #677d83;
     color: white;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,8 +51,8 @@ font-family: Arial, Helvetica, sans-serif;
 #clear-board{
     width: auto;
     height: 30px;
-    margin-left: 47%;
-    background-color: #85357e;
+    margin-left: 38%;
+    background-color: #8fadcf;
     color: white;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -68,7 +69,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .linha{
-   margin-left: 42%;
+   margin-left: 25%;
    display: flexbox ;
    justify-content: center;
    align-items: center;
@@ -79,6 +80,6 @@ font-family: Arial, Helvetica, sans-serif;
     width: 40px;
     height: 40px;
     background-color: white;
-    margin-left: 4px;
+    margin-left: 3px;
     
 }

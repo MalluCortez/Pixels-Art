@@ -1,4 +1,5 @@
 
+window.onload = function () {
 const buttonColor = document.querySelector("#button-random-color");
 let colors = document.querySelectorAll(".variable")
 
@@ -128,3 +129,7 @@ buttonClear.addEventListener("click", function ( ){
     for (let counter = 0; counter < pixels.length; counter ++)
     pixels[counter].style.backgroundColor = "white"
 })
+
+//requisito 12
+
+}
