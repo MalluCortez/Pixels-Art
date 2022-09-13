@@ -1,7 +1,11 @@
 
 window.onload = function () {
 const buttonColor = document.querySelector("#button-random-color");
-let colors = document.querySelectorAll(".variable")
+let colors = document.querySelectorAll(".variable");
+let corRosa = colors[0].style.backgroundColor = "darkmagenta";
+let corAmarela = colors[1].style.backgroundColor = "gold";
+let corVerde = colors[2].style.backgroundColor = "chartreuse";
+
 
 const colorsPalette = [];
 
@@ -105,17 +109,19 @@ for (add = 0; add < squarecolors.length; add++){
 
 // requisito 10
 
+
 const pixels = document.querySelectorAll(".pixel");
 function selectedColor (event) {
 
     const selectedSquare = document.querySelector('.selected')
-
+    console.log(selectedSquare.style.backgroundColor)
     if (selectedSquare.style.backgroundColor){
     event.target.style.backgroundColor = selectedSquare.style.backgroundColor
+    console.log(selectedSquare.style.backgroundColor)
     } else {
     event.target.style.backgroundColor = "black"
     }
-  
+
 }
 
 for (let counter = 0; counter < pixels.length; counter ++){
