@@ -1,85 +1,77 @@
-#title{
-/* text-align: center; */
-color: #677d83;
-width: 100%;
-font-family: Arial, Helvetica, sans-serif;
-margin-left: 25%;  
+#title {
+  color: #677d83;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 25%;
+  width: 100%;
 }
 
-#color-palette{
-   margin-left: 20%;
-   margin-right: 5%;
+#color-palette {
+  margin-left: 20%;
+  margin-right: 5%;
 }
 
-.color{
-    border: black solid 1px;
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    margin-left: 0%;  
+.color {
+  border: black solid 1px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-left: 0%;
 }
 
-#cor1{
-    background-color:black;
-    
+#cor1 {
+  background-color: rgb(0, 0, 0);
 }
 
-#cor2{
-    background-color:darkmagenta
+#cor2 {
+  background-color:darkmagenta;
 }
 
-#cor3{
-    background-color:gold;
+#cor3 {
+  background-color:gold;
 }
 
-#cor4{
-    background-color:chartreuse;
-    
+#cor4 {
+  background-color:rgb(128, 255, 0);
 }
 
-#button-random-color{
-
-    width: auto;
-    height: 30px;
-    margin-left: 32%;
-    background-color: #677d83;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+#button-random-color {
+  width: auto;
+  height: 30px;
+  margin-left: 32%;
+  background-color: #677d83;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#clear-board{
-    width: auto;
-    height: 30px;
-    margin-left: 38%;
-    background-color: #8fadcf;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+#clear-board {
+  width: auto;
+  height: 30px;
+  margin-left: 38%;
+  background-color: #8fadcf;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 
 
 }
 
-#pixel-board{
-
-    /* border: black solid 1px;  */
-    margin-top: 3%;
-    
-    
+#pixel-board {
+  margin-top: 3%;
 }
 
-.linha{
-   margin-left: 25%;
-   display: flexbox ;
-   justify-content: center;
-   align-items: center;
+.linha {
+  margin-left: 25%;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
-.pixel{
-    border: black solid 1px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    margin-left: 3px;
-    
+
+.pixel {
+  border: black solid 1px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin-left: 3px;
 }
