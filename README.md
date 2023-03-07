@@ -16,6 +16,6 @@ Neste projeto, implementei um editor de arte com pixels em que a pessoa usuária
 
 - A estruturação do seu CSS. Evite repetição. Combine e agrupe classes CSS bem definidas.
 
-#Stacks Utilizadas
+# Stacks Utilizadas
 
 - HTML, CSS e JavaScript.
